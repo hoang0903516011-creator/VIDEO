@@ -1,0 +1,7 @@
+node_modules/
+.hyperframes/
+.cache/
+**/renders/work-*/
+**/renders/.*hf-transaction*/
+**/renders/*.zip
+**/assets/voice1.mp3

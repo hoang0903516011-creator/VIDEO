@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=1080,height=1920"><script src="assets/gsap.min.js"></script><style>@font-face{font-family:BeVietnam;src:url(assets/be-vietnam-pro-vietnamese-400-normal.woff2);font-weight:400;unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}
+ @font-face{font-family:BeVietnam;src:url(assets/be-vietnam-pro-latin-400-normal.woff2);font-weight:400;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:BeVietnam;src:url(assets/be-vietnam-pro-vietnamese-900-normal.woff2);font-weight:900;unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}
+ @font-face{font-family:BeVietnam;src:url(assets/be-vietnam-pro-latin-900-normal.woff2);font-weight:900;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+*{box-sizing:border-box;margin:0}html,body{width:1080px;height:1920px;overflow:hidden;background:#FFF9EF;color:#183F39;font-family:BeVietnam,sans-serif}#root{width:1080px;height:1920px;position:relative;overflow:hidden}.scene{position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden;background:#FFF9EF}.scene:not(:first-child){opacity:0}.photo{position:absolute;inset:0;overflow:hidden}.photo-zoom{width:100%;height:100%;transform:scale(1.025)}.sprite{width:100%;height:100%;background-repeat:no-repeat}.sheet0{background-image:url(assets/storyboard.webp);background-size:300% 200%}.sheet1{background-image:url(assets/storyboard-extra.webp);background-size:300% 100%}.scene-content{position:relative;width:100%;height:100%;padding:78px 150px 255px 70px;display:flex;flex-direction:column;gap:24px;pointer-events:none}.brand{align-self:flex-start;background:#FFF9EF;padding:20px 28px;border-radius:24px;box-shadow:0 4px 20px #183f3918}.brand-name{font-weight:900;font-size:32px;letter-spacing:3px}.brand-detail{font-size:20px;line-height:1.7}.story-card{margin-top:auto;margin-bottom:200px;background:#FFF9EF;padding:32px 34px;border-radius:32px;box-shadow:0 10px 35px #183f3920;max-width:840px}.yellow{background:#F4D976}.mint{background:#BBDDCF}.peach{background:#F0B9A6}.cream{background:#FFF9EF}.headline{font-size:70px;line-height:1.16;font-weight:900;letter-spacing:-2px}.subline{font-size:40px;line-height:1.3;margin-top:16px}.hook .headline{font-size:112px}.pack .headline{font-size:62px}.wipe .headline{font-size:70px}.work .subline,.play .subline{font-size:64px;font-weight:900}.cta .headline{font-size:65px}.cta .subline{font-size:60px;font-weight:900}.seller{font-size:29px;font-weight:400;line-height:1.45;margin-top:16px}.arrow{position:absolute;right:170px;bottom:560px;width:85px;height:115px;stroke:#183F39;stroke-width:11;fill:none;stroke-linecap:round;stroke-linejoin:round}.caption{position:absolute;left:70px;top:1480px;width:840px;padding:24px 30px;border-radius:24px;background:#FFF9EF;color:#183F39;font-size:42px;line-height:1.35;font-weight:900;z-index:50;box-shadow:0 5px 25px #183f3918}.offer{background:#F4D976}.offer .photo{inset:auto;left:120px;top:70px;width:740px;height:1315.556px;border-radius:38px;overflow:hidden}.offer .photo-zoom{transform:scale(1.025)}.offer .brand{padding:16px 25px}.offer .story-card{margin-bottom:0;padding:28px 34px;border:3px solid #183F39}.offer .headline{font-size:64px}.offer .subline{font-size:128px;font-weight:900;letter-spacing:-5px;margin-top:0;line-height:1.2;font-variant-numeric:tabular-nums}.condition{font-size:30px;line-height:1.45;margin-top:16px}.date-chip{display:inline-block;background:#183F39;color:#FFF9EF;font-size:30px;padding:10px 20px;border-radius:16px;margin-top:12px}.badge{align-self:flex-start;padding:12px 22px;border-radius:50px;background:#F4D976;font-weight:900;font-size:24px;letter-spacing:2px}
+</style></head><body><main id="root" data-composition-id="topgia-fun" data-start="0" data-duration="30" data-width="1080" data-height="1920"><section id="hook" class="scene hook" style="z-index:1;opacity:1">
+ <div class="photo" data-layout-allow-overflow><div class="photo-zoom"><div class="sprite sheet0" style="background-position:0% 0%"></div></div></div>
+ <div class="scene-content" data-layout-allow-overlap><div class="brand"><p class="brand-name">TỐP GIA</p><p class="brand-detail">KHĂN GIẤY ƯỚT · HÌNH MINH HỌA AI</p></div>
+ <div class="story-card yellow"><h1 class="headline">KHOAN!</h1><p class="subline">Quên người bạn đồng hành!</p></div></div></section>
+<section id="box" class="scene box" style="z-index:2;opacity:0">
+ <div class="photo" data-layout-allow-overflow><div class="photo-zoom"><div class="sprite sheet0" style="background-position:50% 0%"></div></div></div>
+ <div class="scene-content" data-layout-allow-overlap><div class="brand"><p class="brand-name">TỐP GIA</p><p class="brand-detail">KHĂN GIẤY ƯỚT · HÌNH MINH HỌA AI</p></div>
+ <div class="story-card mint"><h1 class="headline">KHUI LÔ KHĂN!</h1><p class="subline">Tốp Gia đây rồi.</p></div></div></section>
+<section id="pack" class="scene pack" style="z-index:3;opacity:0">
+ <div class="photo" data-layout-allow-overflow><div class="photo-zoom"><div class="sprite sheet0" style="background-position:100% 0%"></div></div></div>
+ <div class="scene-content" data-layout-allow-overlap><div class="brand"><p class="brand-name">TỐP GIA</p><p class="brand-detail">KHĂN GIẤY ƯỚT · HÌNH MINH HỌA AI</p></div>
+ <div class="story-card peach"><h1 class="headline">TƯỞNG ĐANG KHUI QUÀ!</h1><p class="subline">Lấy một gói từ lô hàng.</p></div></div></section>
+<section id="wipe" class="scene wipe" style="z-index:4;opacity:0">
+ <div class="photo" data-layout-allow-overflow><div class="photo-zoom"><div class="sprite sheet0" style="background-position:0% 100%"></div></div></div>
+ <div class="scene-content" data-layout-allow-overlap><div class="brand"><p class="brand-name">TỐP GIA</p><p class="brand-detail">KHĂN GIẤY ƯỚT · HÌNH MINH HỌA AI</p></div>
+ <div class="story-card cream"><h1 class="headline">RÚT MỘT TỜ</h1><p class="subline">Chuẩn bị sẵn bên mình.</p></div></div></section>
+<section id="work" class="scene work" style="z-index:5;opacity:0">
+ <div class="photo" data-layout-allow-overflow><div class="photo-zoom"><div class="sprite sheet0" style="background-position:50% 100%"></div></div></div>
+ <div class="scene-content" data-layout-allow-overlap><div class="brand"><p class="brand-name">TỐP GIA</p><p class="brand-detail">KHĂN GIẤY ƯỚT · HÌNH MINH HỌA AI</p></div>
+ <div class="story-card mint"><h1 class="headline">ĐI LÀM?</h1><p class="subline">Có khăn!</p></div></div></section>
+<section id="play" class="scene play" style="z-index:6;opacity:0">
+ <div class="photo" data-layout-allow-overflow><div class="photo-zoom"><div class="sprite sheet1" style="background-position:0% 50%"></div></div></div>
+ <div class="scene-content" data-layout-allow-overlap><div class="brand"><p class="brand-name">TỐP GIA</p><p class="brand-detail">KHĂN GIẤY ƯỚT · HÌNH MINH HỌA AI</p></div>
+ <div class="story-card peach"><h1 class="headline">ĐI CHƠI?</h1><p class="subline">Vẫn có khăn!</p></div></div></section>
+<section id="offer" class="scene offer" style="z-index:7;opacity:0">
+ <div class="photo" data-layout-allow-overflow><div class="photo-zoom"><div class="sprite sheet1" style="background-position:50% 50%"></div></div></div>
+ <div class="scene-content" data-layout-allow-overlap><div class="brand"><p class="brand-name">TỐP GIA</p><p class="brand-detail">KHĂN GIẤY ƯỚT · HÌNH MINH HỌA AI</p></div>
+ <div class="story-card yellow"><h1 class="headline">6 GÓI</h1><p class="subline">150.000đ</p><p class="date-chip">20–31/10</p><p class="condition">Áp dụng khi mua qua giỏ hàng TikTok tài khoản <strong>Đồ Gia dụng tốt</strong>.</p></div></div></section>
+<section id="cta" class="scene cta" style="z-index:8;opacity:0">
+ <div class="photo" data-layout-allow-overflow><div class="photo-zoom"><div class="sprite sheet1" style="background-position:100% 50%"></div></div></div>
+ <div class="scene-content" data-layout-allow-overlap><div class="brand"><p class="brand-name">TỐP GIA</p><p class="brand-detail">KHĂN GIẤY ƯỚT · HÌNH MINH HỌA AI</p></div>
+ <div class="story-card mint"><h1 class="headline">BẤM GIỎ HÀNG</h1><p class="subline">ĐẶT MUA NGAY</p><p class="seller">TikTok · Đồ Gia dụng tốt</p></div></div><svg class="arrow" viewBox="0 0 85 115" data-layout-ignore><path d="M42 8V100 M12 70L42 101L72 70"/></svg></section>
+<p id="cap0" class="clip caption" data-start="0.3" data-duration="1.883" data-track-index="20">Khoan! Quên người bạn đồng hành rồi!</p>
+<p id="cap1" class="clip caption" data-start="2.7" data-duration="0.815" data-track-index="20">Ủa, ai nữa?</p>
+<p id="cap2" class="clip caption" data-start="4.25" data-duration="1.953" data-track-index="20">À, Tốp Gia! Khăn giấy ướt đây rồi.</p>
+<p id="cap3" class="clip caption" data-start="7.25" data-duration="1.918" data-track-index="20">Mở một lô mà tưởng đang khui quà!</p>
+<p id="cap4" class="clip caption" data-start="11.2" data-duration="0.966" data-track-index="20">Đi làm mang gì?</p>
+<p id="cap5" class="clip caption" data-start="12.55" data-duration="0.63" data-track-index="20">Có khăn!</p>
+<p id="cap6" class="clip caption" data-start="14.15" data-duration="0.653" data-track-index="20">Đi chơi?</p>
+<p id="cap7" class="clip caption" data-start="15.1" data-duration="0.757" data-track-index="20">Vẫn có khăn!</p>
+<p id="cap11" class="clip caption" data-start="24.25" data-duration="1.941" data-track-index="20">Bấm giỏ hàng, chọn Tốp Gia nha!</p>
+<p id="cap12" class="clip caption" data-start="27.1" data-duration="1.582" data-track-index="20">Có khăn rồi, giờ thì đi thật!</p>
+<audio id="narration" src="assets/narration.wav" data-start="0" data-duration="30" data-track-index="30" data-volume="1"></audio><audio id="music" src="assets/music-sfx.wav" data-start="0" data-duration="30" data-track-index="31" data-volume="0.65"></audio></main><script>window.__timelines=window.__timelines||{};const tl=gsap.timeline({paused:true});
+tl.from("#hook .photo",{opacity:0,scale:1.035,duration:.44,ease:"sine.out",immediateRender:false},0.16);
+ tl.from("#hook .brand",{opacity:0,x:-28,duration:.32,ease:"power2.out",immediateRender:false},0.19);
+ tl.from("#hook .story-card",{opacity:0,y:52,rotation:-2,duration:.48,ease:"back.out(1.35)",immediateRender:false},0.24);
+ tl.from("#hook .headline",{opacity:0,scale:.85,duration:.35,ease:"expo.out",immediateRender:false},0.31);
+ tl.from("#hook .subline",{opacity:0,x:22,duration:.4,ease:"power3.out",immediateRender:false},0.39);
+tl.fromTo("#hook .photo-zoom",{scale:1.025},{scale:1.085,duration:3.5,ease:"sine.inOut"},0.45);
+tl.set("#box",{opacity:1},4);tl.from("#box",{x:1080,duration:.28,ease:"power4.out",immediateRender:false},4);
+tl.set("#hook",{opacity:0},4.28);
+tl.from("#box .photo",{opacity:0,scale:1.035,duration:.44,ease:"sine.out",immediateRender:false},4.12);
+ tl.from("#box .brand",{opacity:0,x:-28,duration:.32,ease:"power2.out",immediateRender:false},4.15);
+ tl.from("#box .story-card",{opacity:0,y:52,rotation:2,duration:.48,ease:"back.out(1.35)",immediateRender:false},4.2);
+ tl.from("#box .headline",{opacity:0,scale:.85,duration:.35,ease:"expo.out",immediateRender:false},4.2700000000000005);
+ tl.from("#box .subline",{opacity:0,x:22,duration:.4,ease:"power3.out",immediateRender:false},4.3500000000000005);
+tl.set("#pack",{opacity:1},7);tl.from("#pack",{x:1080,duration:.28,ease:"power4.out",immediateRender:false},7);
+tl.set("#box",{opacity:0},7.28);
+tl.from("#pack .photo",{opacity:0,scale:1.035,duration:.44,ease:"sine.out",immediateRender:false},7.12);
+ tl.from("#pack .brand",{opacity:0,x:-28,duration:.32,ease:"power2.out",immediateRender:false},7.15);
+ tl.from("#pack .story-card",{opacity:0,y:52,rotation:-2,duration:.48,ease:"back.out(1.35)",immediateRender:false},7.2);
+ tl.from("#pack .headline",{opacity:0,scale:.85,duration:.35,ease:"expo.out",immediateRender:false},7.2700000000000005);
+ tl.from("#pack .subline",{opacity:0,x:22,duration:.4,ease:"power3.out",immediateRender:false},7.3500000000000005);
+tl.fromTo("#pack .photo-zoom",{scale:1.025},{scale:1.085,duration:1.8499999999999996,ease:"sine.inOut"},7.45);
+tl.set("#wipe",{opacity:1},9.35);tl.from("#wipe",{x:1080,duration:.28,ease:"power4.out",immediateRender:false},9.35);
+tl.set("#pack",{opacity:0},9.629999999999999);
+tl.from("#wipe .photo",{opacity:0,scale:1.035,duration:.44,ease:"sine.out",immediateRender:false},9.469999999999999);
+ tl.from("#wipe .brand",{opacity:0,x:-28,duration:.32,ease:"power2.out",immediateRender:false},9.499999999999998);
+ tl.from("#wipe .story-card",{opacity:0,y:52,rotation:2,duration:.48,ease:"back.out(1.35)",immediateRender:false},9.549999999999999);
+ tl.from("#wipe .headline",{opacity:0,scale:.85,duration:.35,ease:"expo.out",immediateRender:false},9.62);
+ tl.from("#wipe .subline",{opacity:0,x:22,duration:.4,ease:"power3.out",immediateRender:false},9.7);
+tl.fromTo("#wipe .photo-zoom",{scale:1.025},{scale:1.1,duration:1.1500000000000004,ease:"sine.inOut"},9.799999999999999);
+tl.set("#work",{opacity:1},11);tl.from("#work",{x:1080,duration:.28,ease:"power4.out",immediateRender:false},11);
+tl.set("#wipe",{opacity:0},11.28);
+tl.from("#work .photo",{opacity:0,scale:1.035,duration:.44,ease:"sine.out",immediateRender:false},11.12);
+ tl.from("#work .brand",{opacity:0,x:-28,duration:.32,ease:"power2.out",immediateRender:false},11.149999999999999);
+ tl.from("#work .story-card",{opacity:0,y:52,rotation:-2,duration:.48,ease:"back.out(1.35)",immediateRender:false},11.2);
+ tl.from("#work .headline",{opacity:0,scale:.85,duration:.35,ease:"expo.out",immediateRender:false},11.27);
+ tl.from("#work .subline",{opacity:0,x:22,duration:.4,ease:"power3.out",immediateRender:false},11.35);
+tl.to("#work .photo-zoom",{x:-12,duration:2.5,ease:"sine.inOut"},11.45);
+tl.set("#play",{opacity:1},14);tl.from("#play",{x:1080,duration:.28,ease:"power4.out",immediateRender:false},14);
+tl.set("#work",{opacity:0},14.28);
+tl.from("#play .photo",{opacity:0,scale:1.035,duration:.44,ease:"sine.out",immediateRender:false},14.12);
+ tl.from("#play .brand",{opacity:0,x:-28,duration:.32,ease:"power2.out",immediateRender:false},14.149999999999999);
+ tl.from("#play .story-card",{opacity:0,y:52,rotation:2,duration:.48,ease:"back.out(1.35)",immediateRender:false},14.2);
+ tl.from("#play .headline",{opacity:0,scale:.85,duration:.35,ease:"expo.out",immediateRender:false},14.27);
+ tl.from("#play .subline",{opacity:0,x:22,duration:.4,ease:"power3.out",immediateRender:false},14.35);
+tl.to("#play .photo-zoom",{x:12,duration:2.5,ease:"sine.inOut"},14.45);
+tl.set("#offer",{opacity:1},17);tl.from("#offer",{x:1080,duration:.28,ease:"power4.out",immediateRender:false},17);
+tl.set("#play",{opacity:0},17.28);
+tl.from("#offer .photo",{opacity:0,scale:1.035,duration:.44,ease:"sine.out",immediateRender:false},17.12);
+ tl.from("#offer .brand",{opacity:0,x:-28,duration:.32,ease:"power2.out",immediateRender:false},17.150000000000002);
+ tl.from("#offer .story-card",{opacity:0,y:52,rotation:-2,duration:.48,ease:"back.out(1.35)",immediateRender:false},17.2);
+ tl.from("#offer .headline",{opacity:0,scale:.85,duration:.35,ease:"expo.out",immediateRender:false},17.27);
+ tl.from("#offer .subline",{opacity:0,x:22,duration:.4,ease:"power3.out",immediateRender:false},17.35);
+tl.from("#offer .date-chip,#offer .condition",{opacity:0,y:16,duration:.45,stagger:.12,ease:"sine.out",immediateRender:false},17.65);tl.set("#cta",{opacity:1},24);tl.from("#cta",{x:1080,duration:.28,ease:"power4.out",immediateRender:false},24);
+tl.set("#offer",{opacity:0},24.28);
+tl.from("#cta .photo",{opacity:0,scale:1.035,duration:.44,ease:"sine.out",immediateRender:false},24.12);
+ tl.from("#cta .brand",{opacity:0,x:-28,duration:.32,ease:"power2.out",immediateRender:false},24.150000000000002);
+ tl.from("#cta .story-card",{opacity:0,y:52,rotation:2,duration:.48,ease:"back.out(1.35)",immediateRender:false},24.2);
+ tl.from("#cta .headline",{opacity:0,scale:.85,duration:.35,ease:"expo.out",immediateRender:false},24.27);
+ tl.from("#cta .subline",{opacity:0,x:22,duration:.4,ease:"power3.out",immediateRender:false},24.35);
+tl.from("#cta .seller,#cta .arrow",{opacity:0,scale:.7,duration:.45,stagger:.1,ease:"back.out(1.3)",immediateRender:false},24.7);tl.to("#cta .arrow",{y:22,duration:.45,repeat:9,yoyo:true,ease:"sine.inOut"},25);tl.from("#cap0",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},0.3);tl.to("#cap0",{opacity:0,duration:.1,ease:"power2.in"},2.083);tl.set("#cap0",{opacity:0},2.1830000000000003);
+tl.from("#cap1",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},2.7);tl.to("#cap1",{opacity:0,duration:.1,ease:"power2.in"},3.415);tl.set("#cap1",{opacity:0},3.515);
+tl.from("#cap2",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},4.25);tl.to("#cap2",{opacity:0,duration:.1,ease:"power2.in"},6.103000000000001);tl.set("#cap2",{opacity:0},6.203);
+tl.from("#cap3",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},7.25);tl.to("#cap3",{opacity:0,duration:.1,ease:"power2.in"},9.068);tl.set("#cap3",{opacity:0},9.168);
+tl.from("#cap4",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},11.2);tl.to("#cap4",{opacity:0,duration:.1,ease:"power2.in"},12.065999999999999);tl.set("#cap4",{opacity:0},12.165999999999999);
+tl.from("#cap5",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},12.55);tl.to("#cap5",{opacity:0,duration:.1,ease:"power2.in"},13.08);tl.set("#cap5",{opacity:0},13.18);
+tl.from("#cap6",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},14.15);tl.to("#cap6",{opacity:0,duration:.1,ease:"power2.in"},14.703);tl.set("#cap6",{opacity:0},14.802999999999999);
+tl.from("#cap7",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},15.1);tl.to("#cap7",{opacity:0,duration:.1,ease:"power2.in"},15.757);tl.set("#cap7",{opacity:0},15.857);
+tl.from("#cap11",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},24.25);tl.to("#cap11",{opacity:0,duration:.1,ease:"power2.in"},26.090999999999998);tl.set("#cap11",{opacity:0},26.191);
+tl.from("#cap12",{opacity:0,y:10,duration:.13,ease:"power2.out",immediateRender:false},27.1);tl.to("#cap12",{opacity:0,duration:.1,ease:"power2.in"},28.581999999999997);tl.set("#cap12",{opacity:0},28.682);
+window.__timelines["topgia-fun"]=tl;</script></body></html>
